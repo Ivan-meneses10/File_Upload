@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload Vulnerable</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="title">File Upload vulnerability</h1>
+  <form action="upload.php" method="post" enctype="multipart/form-data" class="upload-form">
+    <label for="fileToUpload" class="file-label">Select File to Upload:</label>
+    <input type="file" name="fileToUpload" id="fileToUpload" class="file-input">
+    <input type="submit" value="Upload File" name="submit" class="submit-btn">
+  </form>
+</div>
+</body>
+</html>
